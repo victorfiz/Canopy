@@ -1,0 +1,15 @@
+/* .create-page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;    
+} */
+
+.create-page-content{
+    flex-grow: 1;
+}
+
+
+.create-sidebar{
+    width: 300px;
+    background-color: blue;
+}

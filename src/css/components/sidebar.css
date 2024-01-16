@@ -1,0 +1,34 @@
+.sidebar{
+    border-right: solid 1px #eee;
+}
+
+.sidebar-item:hover{
+    background-color: #F7FAFC;
+    cursor: pointer;
+
+}
+
+.sidebar-item{
+    font-size: 0.9em;
+    border-radius: 5px;
+    color: #703CF0;
+    font-weight: 500;
+}
+
+.sidebar-item-btn{
+    font-size: 0.9em;
+    border-radius: 5px;
+    color: #703CF0;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.sidebar-item-btn:active{
+    transform: scale(0.99);
+}
+
+.sidebar-header{
+    font-size: 0.8em;
+    color: #555;
+    text-transform: uppercase; 
+}

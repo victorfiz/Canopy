@@ -1,0 +1,25 @@
+.menu-title{
+    font-size: 0.7em;
+    color: #777;
+    font-weight: 500;
+
+}
+
+.menu-item {
+    cursor: pointer;
+    font-size: 0.9em;
+    color: #703CF0;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  .menu-item:hover{
+    background-color: #F5F8FA;
+    color: #414552;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .menu-divider{
+    border-bottom: solid #eee 1px;
+  }

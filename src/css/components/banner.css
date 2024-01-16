@@ -1,0 +1,11 @@
+.banner-caution{
+    border: solid 1px #FCD479;
+}
+
+.banner-default{
+    border: solid 1px #D5DBE0;
+}
+
+.banner-critical{
+    border: solid 1px #981B1B;
+}

@@ -1,0 +1,33 @@
+.focusview-bg{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #aaaaaa;
+    z-index: 0;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.focusview-container{
+    border-radius: 5px;
+
+    width: fit-content;
+    height: fit-content;
+    overflow: hidden;
+    z-index: 1;
+
+
+}
+
+.focusview-fullscreen{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    z-index: 3;
+}

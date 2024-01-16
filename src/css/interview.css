@@ -1,0 +1,36 @@
+.start-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; /* Adjust this value according to your needs */
+}
+
+.start-btn, .instructions-redirect {
+    margin: 10px 0; /* Adjust this value according to your needs */
+    cursor: pointer;
+}
+
+
+
+
+.instructions-redirect{
+    font-size: 0.8em;
+    color: #333;
+}
+.start-header{
+    display: flex;
+    position: absolute;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.back-txt{
+    margin-top: -4.5px;
+
+}
+
+
+.report-issue-modal{
+    width: 500px;
+}

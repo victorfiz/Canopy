@@ -1,0 +1,21 @@
+name: Deploy on Comment
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event.issue.pull_request && contains(github.event.comment.body, 'deploy') && github.event.comment.author_association == 'OWNER'
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+        with:
+          ref: 'main'
+      - name: Deploy to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HUMANVIEW_D6BC8 }}'
+          channelId: live
+          projectId: humanview-d6bc8

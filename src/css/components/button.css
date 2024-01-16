@@ -1,0 +1,68 @@
+.spinner {
+  height: 1.2em;
+  width: 1.2em;
+
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  background-size: cover;
+}
+
+.spinner-white {
+  background-image: url("../../assets/spinning.png");
+
+}
+
+.spinner-dark {
+  background-image: url("../../assets/spinning-dark.png");
+}
+
+.loading-button {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+.base-button {
+  font-weight: 500;
+}
+
+.medium-button {
+  width: 200px;
+  font-size: 0.9em;
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.active-scale:active {
+  transform: scale(0.97);
+}
+
+.secondary-button {
+  border: solid 0.1mm #ccc;
+  color: #555;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.primary-button {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-button:hover {
+  border: solid 0.1mm #555;
+}
+
+.base-button:active{
+  -webkit-box-shadow: 0px 0px 0px 3px rgba(165,204,237,1);
+-moz-box-shadow: 0px 0px 0px 3px rgba(165,204,237,1);
+box-shadow: 0px 0px 0px 3px rgba(165,204,237,1);
+}
+
+.base-button{
+  height: fit-content;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: fit-content;
+}

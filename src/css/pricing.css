@@ -1,0 +1,177 @@
+.pricing-container{
+
+    /* border: solid #BC13FE 0.1mm; */
+  
+  
+    background-color: white;
+
+
+}
+
+.pricing-container-button{
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+
+    margin-top: 40px;
+    color: #BC13FE;
+    border: solid #BC13FE 0.1mm;
+
+}
+
+.pricing-txt{
+    margin-top: -0.35em;
+}
+
+/* .pricing-circle-design{
+    width: 1000vw;
+    background-color: #BC13FE;
+    height: 1000vw;
+    margin-top: -200px;
+    z-index: 1;
+    position: fixed;
+    bottom: -i00vw;
+    border-radius: 500vw;
+} */
+
+.pricing-container-hdr{
+    font-size: 1.5em;
+    font-weight: 400;
+    color: rgba(2, 0, 20, 0.8);
+    margin-bottom: 5px;
+
+    padding-bottom: 10px;
+    border-bottom: solid rgba(2, 0, 20, 0.1) 0.1mm;
+    
+}
+
+.pricing-containers-holder{
+    display: flex;
+    justify-content: flex;
+
+}
+
+.pricing-container-hdr-month{
+    font-size: 0.5em;
+}
+
+.pricing-container-price{
+
+
+
+    margin-bottom: 10px;
+    border: solid rgba(188, 19, 254, 0.8) 1px;
+    background-color: rgba(188, 19, 254, 0.08);
+    color: rgba(188, 19, 254, 0.8);
+    cursor: pointer;
+    width: 100px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    
+}
+.pricing-tick{
+    height: 1.3em;
+    width: 1.3em;
+    /* background-color: green; */
+}
+.flex{
+    display: flex;
+}
+.pricing-container-desc-item{
+    line-height: 2.5em;
+    color: rgba(2, 0, 20, 0.8);
+
+    font-size: 0.9em;
+    margin-bottom: 80px;
+}
+
+.pricing-container-desc{
+    flex-grow: 1;
+    margin-top: 30px;
+}
+
+
+
+
+.hero-pricing{
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    flex-grow: 1;
+    font-family: Open Sans;
+    overflow-y: scroll;
+    justify-content: center;
+
+
+}
+.pricing-header {
+    width: 90vw;
+    margin-left: 5vw;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+  }
+  .pricing-holder {
+
+
+    max-height: 100vh;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .pricing-center-options{
+    padding: 5px;
+    height: min-content;
+    border:solid rgba(2, 0, 20, 0.8) 0.1mm;
+    
+    border-radius: 20px;
+  }
+
+  .pricing-middle-section{
+
+    color: rgba(2, 0, 20, 0.8);
+    font-weight: 300;
+    font-size: 0.8em;
+    letter-spacing: 0.1mm;
+    text-align: center;
+  }
+
+  .homepage-glow-button-pricing {
+    position: relative;
+
+    width: 130px;
+    padding: 6px;
+    font-size: 0.9em;
+    border-radius: 8px;
+    background: rgba(112, 60, 240, 0.9);
+    overflow: hidden;
+    color: #ffffff;
+    text-align: center;
+  
+  }
+
+  @media screen and (max-width: 1200px) {
+    .pricing-containers-holder{
+        flex-direction: column;
+
+    }
+
+    .hero-pricing{
+        /* margin-top: 50px; */
+        padding-bottom: 20px;
+        justify-content: flex-start;
+    }
+
+    .phone-mt10{
+        margin-top: 20px;
+    }
+  
+}

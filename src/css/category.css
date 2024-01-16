@@ -1,0 +1,254 @@
+.categories-bg{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 0;
+    opacity: 0.3;
+    cursor: pointer;
+}
+.categories-holder{
+
+    height: 80vh;
+    min-height: 500px;
+    width: 70vw;
+    background-color: white;
+    padding: 20px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+.category-titles-wx{
+    border-bottom: solid rgba(2,0,20,0.1) 0.2mm;
+    padding-bottom: 15px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    border-radius: 5px;
+    border: solid #f9f9f9 1px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .category-number{
+    position: absolute;
+    margin-left: 90px;
+    margin-top: -6px;
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    font-size: 0.65em;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    display: none;
+  }
+
+  .categories-container{
+    margin-top: 10px;
+    display: grid; /* Change display to grid */
+    margin: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); /* This will create a responsive grid with minimum width of 100px for each grid item */
+    grid-gap: 20px; /* This will add a gap between grid items */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 60vh;
+    
+
+  }
+
+  .categories-container::-webkit-scrollbar{
+    display: none;
+  }
+  .select-category-button{
+    background-color: black;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+
+  
+  }
+
+  .select-category-button-highlight{
+    background-color: black;
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    color: white;
+    font-size: 0.9em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .select-category-button:active{
+    transform: scale(0.99);
+  } 
+  
+  .category-footer{
+    justify-content: space-between;
+    display: flex;
+    border-top: solid rgba(2,0,20,0.1) 0.2mm;
+    margin-bottom: 15px;
+    padding-top: 15px;
+  
+  }
+
+  .category-logo{
+    height: 100px;
+    width: 100px;
+  
+    background-size: cover;
+  
+    background-position: center center;
+  
+  
+    
+  
+  }
+  
+  .category:hover{
+    border: solid #eee 1px;
+  
+  }
+  
+  
+  
+  .category-name{
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: #999;
+    font-weight: 200;
+    font-size: 0.8em;
+  
+  }
+  
+
+  
+  .selected-category{
+    border-radius: 5px;
+    border: solid #f9f9f9 1px;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    cursor: pointer;
+    border: solid #BC13FE 2px;
+  }
+  
+  .category:active .selected-category:active{
+    transform: scale(0.95);
+  }
+
+  .category-close{
+    font-size: 1.2em;
+  }
+  
+
+  @media (max-width: 500px) {
+    .categories-holder{
+      position: fixed;
+      height: 100vh;
+
+      width: 100vw;
+      border-radius: 0px;
+
+      left: 0vw;
+      bottom: 0vh;
+      padding: 20px;
+      padding-bottom: 0px;
+
+
+      z-index: 2;
+
+    }
+
+    .category-footer{
+      flex-direction: column-reverse;
+
+    }
+    .select-category-button{
+      background-color: white;
+      padding: 8px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      font-size: 1.2em;
+
+      color: black;
+
+  
+    
+    }
+
+    .select-category-button-highlight{
+      background-color: black;
+      padding: 8px;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+
+    }
+
+    .category   .category-logo{
+
+      min-height: 150px;
+      min-width: 150px;
+    
+    } 
+
+    .category-logo{
+      height: 150px;
+      width: 150px;
+    }
+
+    .categories-container{
+
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* This will create a responsive grid with minimum width of 100px for each grid item */
+
+    }
+
+    .category-titles{
+      font-size: 1.2em;
+    }
+
+    .selected-category{
+
+      height: 150px;
+      width: 150px;
+      min-height: 150px;
+      min-width: 150px;
+      margin: 20px;
+    
+    }
+
+    .add-ints-mobile{
+      width: 90%;
+      right: 5vw;
+      bottom: 10px;
+      padding: 10px;
+      background-color: #BC13FE;
+      font-size: 1.1em;
+    }
+
+
+  }
